@@ -283,20 +283,25 @@ function MovieDetails({ selectedId, onCloseMovie }) {
     Released: released,
     Actors: actors,
     Director: director,
-    Genre,
-    genre,
+    Genre: genre,
   } = movie;
 
-  useEffect(function () {
-    async function getMovieDetails() {
-      const res = await fetch(
-        `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
-      );
-      const data = await res.json();
-      setMovie(data);
-    }
-    getMovieDetails();
-  }, []);
+  useEffect(
+    function () {
+      async function getMovieDetails() {
+        const res = await fetch(
+          `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
+        );
+        const data = await res.json();
+        setMovie(data);
+      }
+      getMovieDetails();
+    },
+    [selectedId]
+    // 👆 if the dependancy array remains empty the component will only run once - when it mounts...
+    // meaning the user cannot click on another movie and have that new movie's data show up
+    // So, the prop that changes (selectedId) needs to be passed in so when it "hears" a new selected Id (the user click on anothe movie) the function will run again
+  );
 
   return (
     <div className="details">

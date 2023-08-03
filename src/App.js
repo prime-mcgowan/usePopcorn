@@ -317,6 +317,14 @@ function MovieDetails({ selectedId, onCloseMovie }) {
         </div>
       </header>
 
+      <section>
+        <p>
+          <em>{plot}</em>
+        </p>
+        <p>Starring {actors}</p>
+        <p>Directed by {director}</p>
+      </section>
+
       {selectedId}
     </div>
   );

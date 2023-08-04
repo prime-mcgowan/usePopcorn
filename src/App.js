@@ -286,10 +286,10 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     .includes(selectedId);
   // does the array include the currently selected ID
 
-  // const watchedUserRating = watched.find(
-  //   (movie) => movie.imdbID === selectedId
-  // )?.userRating;
-  // //optional chaining
+  const watchedUserRating = watched.find(
+    (movie) => movie.imdbID === selectedId
+  )?.userRating;
+  //optional chaining
 
   const {
     Title: title,
@@ -379,7 +379,10 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
                   )}
                 </>
               ) : (
-                <p>You rated this movie.</p>
+                <p>
+                  You gave this movie a rating of {watchedUserRating} stars
+                  <span>🌟</span>
+                </p>
                 // <span>🌟</span>
               )}
             </div>

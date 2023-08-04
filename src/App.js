@@ -380,8 +380,8 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
                 </>
               ) : (
                 <p>
-                  You gave this movie a rating of {watchedUserRating} stars
-                  <span>🌟</span>
+                  {title} is on your list and you gave it<br></br>
+                  {watchedUserRating} stars.<span>🌟</span>
                 </p>
                 // <span>🌟</span>
               )}

@@ -345,6 +345,14 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
     // So, the prop that changes (selectedId) needs to be passed in so when it "hears" a new selected Id (the user click on anothe movie) the function will run again
   );
 
+  useEffect(
+    function () {
+      if (!title) return;
+      document.title = `usePopcorn | ${title}`;
+    },
+    [title]
+  );
+
   return (
     <div className="details">
       {isLoading ? (

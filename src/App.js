@@ -428,9 +428,10 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
                   )}
                 </>
               ) : (
-                <p>
+                <p className="on-list-message">
                   {title} is on your list and you gave it {watchedUserRating}{" "}
-                  stars.<span>🌟</span>
+                  star(s). 🌟
+                  {/* <span className="star">🌟</span> */}
                 </p>
                 // <span>🌟</span>
               )}

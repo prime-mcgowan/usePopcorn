@@ -69,19 +69,24 @@
     align-items: center;
     justify-content: center;
     max-width: 80%;
+    white-space: nowrap;
+
+    position: relative;
   }
 
-  /* .btn-add {
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border: none;
-    border-radius: 10rem;
-    font-size: 1.4rem;
-    padding: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-  } */
+  .on-list-message {
+    display: flex;
+    text-align: center;
+    position: absolute; /* Position the message absolutely */
+    top: 5; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    padding: 1rem; /* Add some padding for spacing */
+
+    border-radius: 0.5rem; /* Apply rounded corners */
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
   .btn-add {
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -110,19 +115,14 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
-    /* align-items: flex-start; */
   }
-  /* 
-  .btn-delete {
-    display: flex;
-  } */
 
   .btn-delete {
     position: absolute;
-    /* right: -2rem; */
+    right: -0.5rem;
     /* Use 'left' instead of 'right' */
-    top: 0;
-    right: 0;
+    /* top: 0;
+    right: 0; */
 
     height: 1.8rem;
     aspect-ratio: 1;

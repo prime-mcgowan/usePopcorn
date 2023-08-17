@@ -99,4 +99,17 @@
     padding: 1rem 2rem; /* Adjust padding as needed */
     white-space: nowrap; /* Prevent text from wrapping to a new line */
   }
+
+  /* .summary p {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  } */
+
+  .summary p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    /* align-items: flex-start; */
+  }
 }

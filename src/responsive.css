@@ -132,4 +132,9 @@
     cursor: pointer;
     transition: all 0.3s;
   }
+
+  .box ul {
+    max-height: 300px;
+    overflow-y: auto;
+  }
 }

@@ -9,6 +9,7 @@
   .box {
     width: 100%; /* Full width on small screens */
     max-width: none; /* Remove max-width restriction */
+    margin-top: 20px;
     margin-bottom: 20px; /* Add spacing between stacked boxes */
     min-height: 200px; /* Set a minimum height for the box */
     border: 1px solid #ccc; /* Add a border for better visualization */
@@ -18,7 +19,84 @@
   }
 
   .list-movies {
-    max-height: 360px;
+    max-height: 300px;
     overflow-y: auto;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 150px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .search {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .num-results {
+    margin-top: 10px;
+  }
+
+  .details header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .details header img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .rating {
+    border-radius: 0.9rem;
+    padding: 2.4rem 14rem; /* Adjust padding as needed */
+    margin: -3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+  }
+
+  /* .btn-add {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 10rem;
+    font-size: 1.4rem;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  } */
+  .btn-add {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: 10rem;
+    font-size: 1.4rem;
+    padding: 0.5rem 10rem; /* Adjust padding as needed */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: auto; /* Allow the button to grow based on content */
+    margin-top: 1rem; /* Add margin for spacing */
+    /* following code centered text in button */
+    display: inline-block; /* Display the button as inline block */
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
   }
 }

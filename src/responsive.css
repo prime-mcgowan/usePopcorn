@@ -112,4 +112,24 @@
     margin-top: 5px;
     /* align-items: flex-start; */
   }
+  /* 
+  .btn-delete {
+    display: flex;
+  } */
+
+  .btn-delete {
+    position: absolute;
+    right: -1.5rem; /* Use 'left' instead of 'right' */
+
+    height: 1.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--color-red);
+    color: var(--color-background-900);
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
 }

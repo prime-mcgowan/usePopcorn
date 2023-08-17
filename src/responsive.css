@@ -1,0 +1,24 @@
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  /* Center-align the logo */
+
+  .main {
+    display: block;
+  }
+
+  .box {
+    width: 100%; /* Full width on small screens */
+    max-width: none; /* Remove max-width restriction */
+    margin-bottom: 20px; /* Add spacing between stacked boxes */
+    min-height: 200px; /* Set a minimum height for the box */
+    border: 1px solid #ccc; /* Add a border for better visualization */
+    padding: 20px; /* Add padding for content spacing */
+    box-sizing: border-box; /* Include padding and border in the total box size */
+    overflow: hidden;
+  }
+
+  .list-movies {
+    max-height: 360px;
+    overflow-y: auto;
+  }
+}

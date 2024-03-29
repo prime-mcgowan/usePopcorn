@@ -1,3 +1,4 @@
+## Description
 ## MyMovies App
 
 MyMovies is a React application that allows users to search for movies and manage their watched movie list. The app retrieves movie data from the OMDB API and provides features to search for movies, view movie details, and track watched movies along with user ratings.
